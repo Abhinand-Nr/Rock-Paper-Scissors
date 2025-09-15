@@ -2,33 +2,30 @@
 <html>
   <head>
     <title>Rock Paper Scissors</title>
-    <link rel = "stylesheet" href = "styles/RPS.css">
-
- 
+    <!-- CSS file is directly in root -->
+    <link rel="stylesheet" href="RPS.css">
   </head>
- 
  
   <body>
     <p class="title">Rock Paper Scissors</p>
-    <button class = "move-button" onclick="
-      playGame('rock');
-    ">
-    <img class = "move" src = "images/rock-emoji.png">
+    
+    <button class="move-button" onclick="playGame('rock')">
+      <img class="move" src="rock-emoji.png">
     </button>
 
-    <button class = "move-button" onclick="
-      playGame('paper');
-    "><img class = "move" src = "images/paper-emoji.png"></button>
+    <button class="move-button" onclick="playGame('paper')">
+      <img class="move" src="paper-emoji.png">
+    </button>
 
-    <button  class = "move-button" onclick="
-      playGame('scissors');
-    ">
-    <img class = "move" src = "images/scissors-emoji.png"></button>
-    <p class = 'js-result'></p>
-    <p class = 'js-moves'></p>
-    <p class = 'js-score'></p>
+    <button class="move-button" onclick="playGame('scissors')">
+      <img class="move" src="scissors-emoji.png">
+    </button>
 
-    <button class = "reset" onclick="
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button class="reset" onclick="
       score.Wins = 0;
       score.Loss = 0;
       score.Tie = 0;
@@ -36,6 +33,7 @@
       localStorage.removeItem('score');
     ">Reset Score</button>
 
-    <script src="scripts/RPS.js"> </script>
+    <!-- JS file is directly in root -->
+    <script src="RPS.js"></script>
   </body>
 </html>
